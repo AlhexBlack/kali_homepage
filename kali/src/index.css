@@ -11,3 +11,168 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+#homepagesec{
+    margin-top: -16px;
+    background-image: url(image/kalibg.jpg);
+    box-shadow: inset 1000px 1000px 10px rgba(7, 66, 122, 0.705);
+    background-color: black;
+    height: 610px;
+    width: 100%;
+    background-size: cover;
+}
+#homepagesec::before{
+  background-color: rgba(10, 19, 104, 0.644);
+
+}
+#navlist{
+  display: flex;
+  justify-content: center;
+  gap: 280px;
+  padding-top: 15px;
+  list-style-type: none;
+  align-items: center;
+}
+#navlistitem1{
+  display: inline-block;
+}
+#navlistitem2{
+  display: flex;
+}
+#navlistbutton{
+  background: none;
+  border: none;
+  color: white;
+  font-size: 15px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 550;
+  cursor: pointer;
+}
+#navlistbuttonx{
+  background: none;
+  border: none;
+  text-decoration: none;
+  color: white;
+  font-size: 15px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 550;
+  padding-top: 5px;
+  margin-left: 10px;
+}  
+#navlistbuttonx{
+  cursor: pointer;
+}
+#dropdown{
+  margin-left: 10px;
+  text-decoration: none;
+  display: inline-block;
+}
+#content{
+  display: none;
+  background-color: white;
+  border-radius: 0 10px 10px 10px;
+  border-top: 1px solid rgb(104, 109, 133);
+  padding: 50px 10px 0px 10px;
+  position: absolute;
+}
+#contentabout{
+  display: none;
+  background-color: white;
+  border-radius: 0 10px 10px 10px;
+  border-top: 1px solid rgb(104, 109, 133);
+  padding: 50px 10px 0px 10px;
+  position: absolute;
+  text-align: right;
+}
+#contentabout:last-child{
+    right: 44px;
+    border-radius: 10px 0 10px 10px;
+    text-align: right;
+}
+#dropdown:hover #contentabout{
+  display: block;
+}
+#dropdown:hover #content{
+  display: block;
+}
+#dropdown #link{
+  height: 50px;
+  margin-top: -30px;
+  text-decoration: none;
+  color: black;
+  display: block;
+
+}
+#dropdown:hover #navlistbutton{
+  height: 50px;
+  margin-top: -20px;
+  background: white;
+  border: none;
+  border-radius: 10px 10px 0 0;
+  /* padding: 10px 10px; */
+  color: rgb(17, 166, 235);
+  font-size: 15px;
+  text-align: center;
+  font-weight: 550;
+}
+#homepop{
+  display: flex;
+  gap: 20px;
+  height: 380px;
+  width: 980px;
+  margin-top: 100PX;
+  margin-left: auto;
+  margin-right: auto;
+}
+#homepop-text h1{
+    font-size: 30px;
+    margin-bottom: 0px;
+    color: white;
+}
+#homepop-text p{
+  color: white;
+  font-size: 17.4px;
+}
+#download-button{
+  font-size: 16px;
+  background: none;
+  border: 2px solid rgba(255, 166, 0, 0.87);
+  box-shadow: 0 0 10px rgba(255, 166, 0, 0.575);
+  font-weight: 700;
+  color: orange;
+  margin-top: 10px;
+  border-radius: 5px;
+  height: 60px;
+  width: 180px;
+}
+#documentation-button{
+  font-weight: 700;
+  background-color: #2777FF;
+  box-shadow: 0 8px 0px #2266dd;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  margin-left: 20px;
+  padding-top: 8px;
+  height: 52px;
+  width: 180px;
+}
+#movingarrow{
+  margin-left: auto;
+  margin-right: auto;
+  width: 24px;
+  height: 24px;
+  animation-name: bounce;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+
+@keyframes bounce{
+  50%{transform: translateY(15px);}
+}
