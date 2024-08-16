@@ -1,7 +1,6 @@
 import React from 'react'
 import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom'
 import KaliLogo from '../image/kali-logo.svg'
-import ArrowDown from '../image/arrowdown.svg'
 import DocumentationPage from '../pages/DocumentationPages'
 import ToolsDocumentation from '../pages/ToolsDocumentation.js'
 import FrequentlyAskedQuestions from '../pages/FrequentlyAskedQuestions.js'
