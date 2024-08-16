@@ -1,6 +1,8 @@
 import React from 'react'
 import Dragon from '../image/kali-dragon-icon.svg'
 import ArrowDown from '../image/arrowdown.svg'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faCircleDown, faBookOpen } from '@fortawesome/free-solid-svg-icons'
 
 const Home = () => {
   return (
@@ -14,8 +16,8 @@ const Home = () => {
             <p>Kali Linux is an open-source, Debian-based Linux distribution geared towards various information security tasks, such as Penetration Testing, Security Research, Computer Forensics and Reverse Engineering.</p>
           </div>
           <div>
-            <button id="download-button">Download</button>
-            <button id="documentation-button">Documentation</button>
+            <button id="download-button">Download<span>&nbsp;<FontAwesomeIcon icon={faCircleDown} /></span></button>
+            <button id="documentation-button">Documentation<span>&nbsp;<FontAwesomeIcon icon={faBookOpen} /></span></button>
           </div>
         </div>
       </div>

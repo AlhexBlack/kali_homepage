@@ -20,10 +20,6 @@ code {
     width: 100%;
     background-size: cover;
 }
-#homepagesec::before{
-  background-color: rgba(10, 19, 104, 0.644);
-
-}
 #navlist{
   display: flex;
   justify-content: center;
@@ -38,8 +34,14 @@ code {
 #navlistitem2{
   display: flex;
 }
+#navlistitem2 a{
+  text-decoration: none;
+  
+}
 #navlistbutton{
+  padding: 15px;
   background: none;
+  border-radius: 10px 10px 0 0;
   border: none;
   color: white;
   font-size: 15px;
@@ -49,8 +51,10 @@ code {
   align-items: center;
   font-weight: 550;
   cursor: pointer;
+  transition: all 0.3s ease 0s;
 }
 #navlistbuttonx{
+  padding: 15px;
   background: none;
   border: none;
   text-decoration: none;
@@ -61,14 +65,13 @@ code {
   justify-content: center;
   align-items: center;
   font-weight: 550;
-  padding-top: 5px;
-  margin-left: 10px;
 }  
-#navlistbuttonx{
+#navlistbuttonx:hover{
   cursor: pointer;
+  color: #2777FF;
+  transition: all 0.3s ease 0s;
 }
 #dropdown{
-  margin-left: 10px;
   text-decoration: none;
   display: inline-block;
 }
@@ -77,22 +80,27 @@ code {
   background-color: white;
   border-radius: 0 10px 10px 10px;
   border-top: 1px solid rgb(104, 109, 133);
-  padding: 50px 10px 0px 10px;
+  padding: 50px 50px 0px 10px;
   position: absolute;
+  transition: all 0.3s ease 0s;
 }
 #contentabout{
   display: none;
   background-color: white;
-  border-radius: 0 10px 10px 10px;
+  border-radius: 10px 0 10px 10px;
+  min-width: 150px;
   border-top: 1px solid rgb(104, 109, 133);
-  padding: 50px 10px 0px 10px;
+  padding: 50px 10px 0px 40px;
   position: absolute;
   text-align: right;
+  right: 33px;
+  transition: all 0.3s ease 0s;
 }
-#contentabout:last-child{
-    right: 44px;
-    border-radius: 10px 0 10px 10px;
-    text-align: right;
+#contentabout a{
+  margin-right: 10px;
+}
+#content a{
+  margin-left: 6px;
 }
 #dropdown:hover #contentabout{
   display: block;
@@ -102,19 +110,21 @@ code {
 }
 #dropdown #link{
   height: 50px;
-  margin-top: -30px;
+  margin-top: -30px; 
   text-decoration: none;
   color: black;
   display: block;
-
+}
+#dropdown #link:hover{
+  cursor: pointer;
+  color: #2777FF;
+  transition: all 0.3s ease 0s;
 }
 #dropdown:hover #navlistbutton{
-  height: 50px;
-  margin-top: -20px;
+  padding: 15px;
   background: white;
   border: none;
   border-radius: 10px 10px 0 0;
-  /* padding: 10px 10px; */
   color: rgb(17, 166, 235);
   font-size: 15px;
   text-align: center;
@@ -149,6 +159,19 @@ code {
   border-radius: 5px;
   height: 60px;
   width: 180px;
+  transition: all 0.3s ease 0s;
+}
+#download-button:hover{
+  font-size: 16px;
+  background: rgba(255, 166, 0, 0.87);
+  border: 2px solid rgba(255, 166, 0, 0.87);
+  box-shadow: 0 0 20px rgba(255, 166, 0, 0.575);
+  font-weight: 700;
+  color: rgb(255, 255, 255);
+  margin-top: 10px;
+  border-radius: 5px;
+  height: 60px;
+  width: 180px;
 }
 #documentation-button{
   font-weight: 700;
@@ -161,6 +184,21 @@ code {
   padding-top: 8px;
   height: 52px;
   width: 180px;
+  color: white;
+  transition: all 0.3s ease 0s;
+}
+#documentation-button:hover{
+  font-weight: 700;
+  background-color: #2777FF;
+  box-shadow: 0 4px 0px #2266dd;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  margin-left: 20px;
+  padding-top: 0px;
+  height: 52px;
+  width: 180px;
+  color: white;
 }
 #movingarrow{
   margin-left: auto;

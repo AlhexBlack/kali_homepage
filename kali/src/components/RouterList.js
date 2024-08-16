@@ -35,6 +35,8 @@ import MeetTheKaliTeam from '../pages/MeetTheKaliTeam.js'
 import Parternerships from '../pages/Parternerships.js'
 import ContactUs from '../pages/ContactUs.js'
 import Home from '../pages/Home.js'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faAngleDown } from '@fortawesome/free-solid-svg-icons'
 
 const RouterList = () => {
     return (
@@ -52,8 +54,9 @@ const RouterList = () => {
                     <li>
                         <Link to="/blog"><button id='navlistbuttonx'>BLOG</button></Link>
                     </li>
+                    <li>
                     <div id='dropdown'>
-                        <button id='navlistbutton'>DOCUMENTATION<span><img src={ArrowDown} alt="down" /></span></button>
+                        <button id='navlistbutton'>DOCUMENTATION<span>&nbsp;<FontAwesomeIcon icon={faAngleDown} /></span></button>
                         <div id='content'>
                             <Link id='link' to="/documentation-pages">DOCUMENTATION PAGES</Link><br/>
                             <Link id='link' to="/tools-documentation">TOOLS DOCUMENTATION</Link><br/>
@@ -61,9 +64,10 @@ const RouterList = () => {
                             <Link id='link' to="/known-issue">KNOWN ISSUE</Link><br/>
                         </div>
                     </div>
+                    </li>
                     <li>
                         <div id='dropdown'>
-                        <button id='navlistbutton'>COMMUNITY<span><img src={ArrowDown} alt="down" /></span></button>
+                        <button id='navlistbutton'>COMMUNITY<span>&nbsp;<FontAwesomeIcon icon={faAngleDown} /></span></button>
                         <div id='content'>
                             <Link id='link' to="/community-support">COMMUNITY SUPPORT</Link><br/>
                             <Link id='link' to="/forums">FORUM</Link><br/>
@@ -76,7 +80,7 @@ const RouterList = () => {
                     </li>
                     <li>
                         <div id='dropdown'>
-                        <button id='navlistbutton'>COURSES<span><img src={ArrowDown} alt="down" /></span></button>
+                        <button id='navlistbutton'>COURSES<span>&nbsp;<FontAwesomeIcon icon={faAngleDown} /></span></button>
                         <div id='content'>
                             <Link id='link' to="/kali-linux-revealed">Kali Linux Revealed</Link><br/>
                             <Link id='link' to="/pen-200">PEN-200</Link><br/>
@@ -92,7 +96,7 @@ const RouterList = () => {
                     </li>
                     <li>
                         <div id='dropdown'>
-                        <button id='navlistbutton'>DEVELOPERS<span><img src={ArrowDown} alt="down" /></span></button>
+                        <button id='navlistbutton'>DEVELOPERS<span>&nbsp;<FontAwesomeIcon icon={faAngleDown} /></span></button>
                         <div id='content'>
                             <Link id='link' to="/git-repositories">Git Repositories</Link><br/>
                             <Link id='link' to="/packages">Packages</Link><br/>
@@ -104,7 +108,7 @@ const RouterList = () => {
                     </li>
                     <li>
                         <div id='dropdown'>
-                        <button id='navlistbutton'>ABOUT<span><img src={ArrowDown} alt="down" /></span></button>
+                        <button id='navlistbutton'>ABOUT<span>&nbsp;<FontAwesomeIcon icon={faAngleDown} /></span></button>
                         <div id='contentabout'>
                             <Link id='link' to="/kali-linux-overview">Kali Linux Overview</Link><br/>
                             <Link id='link' to="/press-pack">Press Pack</Link><br/>
